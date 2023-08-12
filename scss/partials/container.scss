@@ -1,0 +1,11 @@
+.container {
+  max-width: 90rem;
+  background-color: $color-background;
+  margin: 0 auto;
+  padding: 2.62rem 4.81rem;
+
+  @include breakpoint($breakpoint-tablet) {
+    position: relative;
+    padding: 1.19rem 0.75rem;
+  }
+}

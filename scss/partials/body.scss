@@ -1,0 +1,11 @@
+html {
+  font-size: 1vw;
+  @include breakpoint($breakpoint-tablet) {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: $color-background;
+  @include font-style-one;
+}

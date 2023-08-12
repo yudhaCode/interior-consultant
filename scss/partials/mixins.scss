@@ -1,0 +1,33 @@
+// text styles
+@mixin font-style-one {
+  font-family: $font-montserrat;
+  line-height: normal;
+  font-style: normal;
+  color: $color-text;
+}
+
+@mixin font-style-two {
+  font-family: $font-lora;
+  line-height: normal;
+  font-style: normal;
+  color: $color-text;
+}
+
+@mixin underline {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: $color-text;
+  }
+}
+
+// breakpoints
+@mixin breakpoint($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

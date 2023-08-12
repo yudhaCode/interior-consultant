@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 30vh;
+  text-align: center;
+  &__text {
+    @include font-style-one;
+    color: #a9a9a9;
+    font-size: 0.875rem;
+    text-decoration-line: underline;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+}

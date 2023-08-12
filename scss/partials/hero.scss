@@ -1,0 +1,162 @@
+.hero {
+  padding-top: 2.38rem;
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint($breakpoint-tablet) {
+      align-items: start;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    @include font-style-two;
+    flex-basis: 26rem;
+
+    @include breakpoint($breakpoint-tablet) {
+      flex-basis: 0;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 2.25rem;
+      white-space: nowrap;
+    }
+  }
+
+  &__title-description {
+    @include font-style-one;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+
+    @include breakpoint($breakpoint-mobile) {
+      width: 15.625rem;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 25rem;
+      line-height: 1.5;
+      font-size: 0.875rem;
+      margin-bottom: 1.56rem;
+    }
+  }
+
+  &__cta {
+    @include font-style-one;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  &__image-section {
+    padding: 1rem 0 0.56rem 9rem;
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 51.31963rem;
+  }
+
+  &__author {
+    display: flex;
+    background-color: $color-background;
+    width: 25.625rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1rem 0 2.12rem 1.62rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    bottom: -0.9rem;
+    right: -11rem;
+    z-index: 99;
+
+    @include breakpoint($breakpoint-tablet) {
+      position: absolute;
+      transform: translate(-50%, 50%);
+      max-width: 84%;
+      left: 52%;
+      bottom: -1.5rem;
+    }
+  }
+
+  &__author-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 0.69rem;
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+
+  &__author-title {
+    @include font-style-two;
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 17.9375rem;
+    margin-top: 1rem;
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 1.125rem;
+      max-width: 12rem;
+    }
+  }
+
+  &__author-text {
+    display: flex;
+  }
+
+  &__author-role {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.8rem;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-left: 1rem;
+    }
+  }
+
+  &__author-name {
+    @include font-style-one;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  &__author-description {
+    @include font-style-one;
+    color: #828282;
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 0.625rem;
+    }
+  }
+}
+
+.long-arrow-icon {
+  margin-left: 0.6rem;
+}
